@@ -1,0 +1,137 @@
+.adv-platforms {
+  &__title {
+    width: 100%;
+    margin-bottom: 60px;
+    padding: 20px 0;
+
+    text-align: center;
+    text-transform: uppercase;
+
+    color: $dark-green;
+    background-color: #f0f7ed;
+
+    font-size: rem-calc(42);
+    @media screen and (max-width: 800px) {
+      font-size: rem-calc(32);
+    }
+  }
+  &__wrapper {
+    display: flex;
+
+    align-items: stretch;
+    @extend .wrapper;
+    flex-wrap: wrap;
+    justify-content: center;
+    @media screen and (max-width: 800px) {
+      display: block;
+    }
+  }
+}
+
+.adv-platforms-block {
+  width: 488px;
+  margin-bottom: 55px;
+  @media screen and (max-width: 800px) {
+    width: 100%;
+    margin-bottom: 25px;
+  }
+  &:nth-child(odd) {
+    margin-right: 115px;
+    @media screen and (max-width: 800px) {
+      margin-right: 0;
+    }
+  }
+  &__image {
+    overflow: hidden;
+
+    padding: 31px 2px 2px 2px;
+
+    background: url(%=static=%general/web.jpg) no-repeat;
+    @media screen and (max-width: 800px) {
+      padding-top: 24px;
+
+      background-size: cover;
+    }
+    img {
+      width: 100%;
+    }
+  }
+  &__link {
+    display: block;
+
+    margin-top: 10px;
+    padding: 10px 0;
+
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+
+    color: $white;
+
+    font-family: "Lato-Black";
+    font-size: rem-calc(35);
+
+    @include transition;
+    @media screen and (max-width: 800px) {
+      font-size: rem-calc(23);
+    }
+    &._dark {
+      background-color: $dark-green;
+      &:hover {
+        background-color: $dark-green + #111;
+      }
+    }
+    &._light {
+      background-color: $light-green;
+      &:hover {
+        background-color: $light-green + #111;
+      }
+    }
+  }
+  &__text {
+    margin-top: 20px;
+
+    color: #949393;
+
+    font-family: "Lato-Italic";
+    font-size: rem-calc(15);
+    line-height: rem-calc(19);
+  }
+}
+
+.adv-platforms-block-meta {
+  display: flex;
+
+  margin-top: 20px;
+
+  align-items: center;
+  justify-content: space-between;
+  &__item {
+    text-transform: uppercase;
+
+    color: #999;
+
+    font-size: rem-calc(12);
+    span {
+      display: block;
+
+      text-transform: none;
+
+      color: $light-green;
+
+      font-family: "Lato-Black";
+      font-size: rem-calc(23);
+    }
+    img {
+      display: inline-block;
+
+      margin-left: 5px;
+
+      vertical-align: center;
+      @media screen and (max-width: 800px) {
+        display: none;
+      }
+    }
+  }
+}

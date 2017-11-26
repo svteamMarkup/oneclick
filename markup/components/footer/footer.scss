@@ -1,0 +1,46 @@
+.footer {
+  padding: 15px 0;
+
+  background-color: #012701;
+  &__wrapper {
+    display: flex;
+
+    align-items: center;
+    @extend .wrapper;
+    justify-content: flex-start;
+    @media screen and (max-width: 800px) {
+      display: block;
+    }
+  }
+  &__logo {
+    @include bg($logo-footer);
+    @media screen and (max-width: 800px) {
+      margin: auto;
+    }
+  }
+  &__copyright {
+    max-width: 60%;
+    padding-top: 5px;
+    padding-left: 40px;
+
+    color: rgba($white, .7);
+    @media screen and (max-width: 800px) {
+      max-width: 100%;
+      padding-top: 15px;
+      padding-left: 0;
+
+      text-align: center;
+
+      font-size: rem-calc(14);
+    }
+    span {
+      display: block;
+
+      padding-top: 3px;
+
+      color: rgba($white, .5);
+
+      font-size: rem-calc(13);
+    }
+  }
+}

@@ -1,0 +1,14 @@
+// GUI stylies of the project
+// For example, styles of the links, buttons and so on.
+
+.wrapper {
+  display: block;
+
+  width: 1200px;
+  margin: auto;
+  @media screen and (max-width: 800px) {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 0 10px;
+  }
+}

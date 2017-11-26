@@ -1,0 +1,29 @@
+doctype html
+html(class="no-js", lang="ru")
+
+  include ../components/head/head
+  include ../components/header/header
+  include ../components/top-baner/top-baner
+  include ../components/service-type/service-type
+  include ../components/adv-platforms/adv-platforms
+  include ../components/advantages/advantages
+  include ../components/graphics/graphics
+  include ../components/about/about
+  include ../components/contacts/contacts
+  include ../components/footer/footer
+
+  head
+    +head(head.defaults)
+  body
+    .main
+      +header
+      +top-baner
+      +service-type
+      +adv-platforms
+      +advantages
+      +graphics
+      +about
+      +contacts
+      +footer
+    script(src="https://yastatic.net/jquery/3.1.1/jquery.min.js")
+    script(src='%=static=%js/main%=hash=%%=min=%.js')

@@ -1,0 +1,74 @@
+.top-baner {
+  position: relative;
+
+  overflow: hidden;
+
+  min-height: 720px;
+
+  background: url(%=static=%general/top-baner.jpg) no-repeat center;
+  background-size: cover;
+  @media screen and (max-width: 800px) {
+    min-height: 450px;
+  }
+  &__wrapper {
+    @extend .wrapper;
+  }
+  &:after {
+    position: absolute;
+    bottom: -240px;
+    left: -10%;
+
+    width: 120%;
+    height: 320px;
+
+    content: "";
+
+    border-radius: 50%;
+    background-color: $white;
+    @media screen and (max-width: 800px) {
+      display: none;
+    }
+  }
+}
+
+.top-baner-text {
+  text-align: center;
+
+  @include absolute-center;
+  &__row {
+    text-transform: uppercase;
+
+    color: $white;
+    text-shadow: 0 0 20px rgba($black, .3);
+
+    font-family: "Lato-Black";
+    line-height: 1;
+    &:nth-child(1) {
+      letter-spacing: -2px;
+
+      font-size: rem-calc(81);
+      @media screen and (max-width: 800px) {
+        margin-bottom: 10px;
+
+        font-size: rem-calc(40);
+      }
+    }
+    &:nth-child(2) {
+      color: $orange;
+
+      font-size: rem-calc(112);
+      @media screen and (max-width: 800px) {
+        font-size: rem-calc(55);
+      }
+    }
+    &:nth-child(3) {
+      margin-top: 10px;
+
+      font-size: rem-calc(33);
+      @media screen and (max-width: 800px) {
+        font-size: rem-calc(24);
+        line-height: 33px;
+      }
+    }
+  }
+}

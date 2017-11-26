@@ -1,0 +1,86 @@
+.advantages {
+  padding: 40px 0;
+
+  background-color: #f0f7ed;
+    @media screen and (max-width: 800px) {
+      padding: 20px 0;
+    }
+  &__wrapper {
+    display: flex;
+
+    align-items: center;
+    @extend .wrapper;
+    justify-content: space-between;
+    @media screen and (max-width: 800px) {
+      display: block;
+    }
+  }
+  &__title {
+    margin-bottom: 15px;
+
+    color: $dark-green;
+
+    font-size: rem-calc(38);
+    span {
+      display: block;
+
+      font-family: "Lato-Black";
+    }
+  }
+  &__text {
+    color: #333;
+
+    font-size: rem-calc(15);
+    line-height: 22px;
+  }
+  &__left {
+    width: 48%;
+    @media screen and (max-width: 800px) {
+      width: 100%;
+      margin-bottom: 25px;
+    }
+  }
+  &__right {
+    display: flex;
+
+    width: 50%;
+
+    align-items: stretch;
+    justify-content: space-between;
+    @media screen and (max-width: 800px) {
+      width: 100%;
+    }
+  }
+}
+
+.advantages-block {
+  width: 100%;
+  max-width: 180px;
+
+  text-align: center;
+  &__icon {
+    margin: 0 auto 12px;
+    &._site {
+      @include bg($site);
+    }
+    &._user {
+      margin-bottom: 15px;
+
+      @include bg($user);
+    }
+    &._adv {
+      @include bg($adv);
+    }
+  }
+  &__title {
+    color: #333;
+
+    font-family: "Lato-Black";
+    font-size: rem-calc(21);
+  }
+  &__text {
+    color: #333;
+
+    font-size: rem-calc(14);
+  }
+}
