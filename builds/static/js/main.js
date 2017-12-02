@@ -10,7 +10,7 @@ $(document).ready(function() {
     var destination = $(elementClick).offset().top;
     $(this).addClass('_active').siblings().removeClass('_active');
     $("html:not(:animated),body:not(:animated)").animate({
-      scrollTop: destination
+      scrollTop: destination - 50
     }, 800);
     return false;
   });
