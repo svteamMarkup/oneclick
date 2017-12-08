@@ -1,6 +1,6 @@
 .about {
   padding: 50px 0;
-  @media screen and (max-width: 800px) {
+  @media screen and (max-width: 1100px) {
     padding: 20px 0;
   }
   &__wrapper {
@@ -9,13 +9,13 @@
     align-items: center;
     @extend .wrapper;
     justify-content: center;
-    @media screen and (max-width: 800px) {
+    @media screen and (max-width: 1100px) {
       display: block;
     }
   }
   &__left {
     width: 48%;
-    @media screen and (max-width: 800px) {
+    @media screen and (max-width: 1100px) {
       width: 100%;
     }
   }
@@ -39,7 +39,7 @@
 }
 
 .about-partners {
-  @media screen and (max-width: 800px) {
+  @media screen and (max-width: 1100px) {
     padding-top: 20px;
   }
   &__title {
@@ -50,12 +50,12 @@
     color: #666;
 
     font-size: rem-calc(24);
-    @media screen and (max-width: 800px) {
+    @media screen and (max-width: 1100px) {
       text-align: center;
     }
   }
   &__item {
-    @media screen and (max-width: 800px) {
+    @media screen and (max-width: 1100px) {
       text-align: center;
     }
   }

@@ -432,7 +432,7 @@ blockquote {
   margin: auto;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1200px) {
   .wrapper, .about__wrapper, .adv-platforms__wrapper, .advantages__wrapper, .contacts__wrapper, .footer__wrapper, .graphics__wrapper, .header__wrapper, .service-type__wrapper, .top-baner__wrapper {
     box-sizing: border-box;
     width: 100%;
@@ -448,7 +448,7 @@ html, body {
   padding: 50px 0;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1100px) {
   .about {
     padding: 20px 0;
   }
@@ -466,7 +466,7 @@ html, body {
           justify-content: center;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1100px) {
   .about__wrapper {
     display: block;
   }
@@ -476,7 +476,7 @@ html, body {
   width: 48%;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1100px) {
   .about__left {
     width: 100%;
   }
@@ -499,7 +499,7 @@ html, body {
   line-height: 1.375rem;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1100px) {
   .about-partners {
     padding-top: 20px;
   }
@@ -512,13 +512,13 @@ html, body {
   font-size: 1.5rem;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1100px) {
   .about-partners__title {
     text-align: center;
   }
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1100px) {
   .about-partners__item {
     text-align: center;
   }
@@ -566,6 +566,12 @@ html, body {
   margin-bottom: 55px;
 }
 
+@media screen and (max-width: 1100px) {
+  .adv-platforms-block {
+    width: 45%;
+  }
+}
+
 @media screen and (max-width: 800px) {
   .adv-platforms-block {
     width: 100%;
@@ -575,6 +581,12 @@ html, body {
 
 .adv-platforms-block:nth-child(odd) {
   margin-right: 115px;
+}
+
+@media screen and (max-width: 1100px) {
+  .adv-platforms-block:nth-child(odd) {
+    margin-right: 50px;
+  }
 }
 
 @media screen and (max-width: 800px) {
@@ -589,7 +601,7 @@ html, body {
   background: url(../images/general/web.jpg) no-repeat;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1100px) {
   .adv-platforms-block__image {
     padding-top: 24px;
     background-size: cover;
@@ -615,7 +627,7 @@ html, body {
   transition: all .4s ease-in-out;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1100px) {
   .adv-platforms-block__link {
     font-size: 1.4375rem;
   }
@@ -678,7 +690,7 @@ html, body {
   vertical-align: center;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1100px) {
   .adv-platforms-block-meta__item img {
     display: none;
   }
@@ -967,19 +979,19 @@ html, body {
           justify-content: space-between;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1100px) {
   .graphics__wrapper {
     display: block;
   }
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1100px) {
   .graphics__left {
     width: 100%;
   }
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1100px) {
   .graphics__left img {
     width: 100%;
   }
@@ -999,7 +1011,7 @@ html, body {
   font-size: 1.5625rem;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1100px) {
   .graphics__title {
     position: relative;
     top: inherit;
@@ -1013,13 +1025,13 @@ html, body {
   width: 470px;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1100px) {
   .graphics-image {
     width: 100%;
   }
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1100px) {
   .graphics-image img {
     width: 100%;
   }
@@ -1228,7 +1240,7 @@ html, body {
   margin-top: 40px;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1100px) {
   .header-menu {
     display: none;
   }
@@ -1263,6 +1275,12 @@ html, body {
   font-size: 1.0625rem;
   -webkit-transition: all .4s ease-in-out;
   transition: all .4s ease-in-out;
+}
+
+@media screen and (max-width: 1200px) {
+  .header-menu__item {
+    margin: 0 10px;
+  }
 }
 
 .header-menu__item:hover {
