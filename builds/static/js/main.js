@@ -4,6 +4,7 @@
 
 
 
+
 $(document).ready(function() {
   $(".header-menu__item").click(function() {
     var elementClick = $(this).attr("href")
@@ -24,4 +25,3 @@ $(document).ready(function() {
   });
 
 });
-
