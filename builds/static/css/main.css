@@ -684,6 +684,12 @@ html, body {
   font-size: 1.4375rem;
 }
 
+@media screen and (max-width: 320px) {
+  .adv-platforms-block-meta__item span {
+    font-size: 1.1875rem;
+  }
+}
+
 .adv-platforms-block-meta__item img {
   display: inline-block;
   margin-left: 5px;

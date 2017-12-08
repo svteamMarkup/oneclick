@@ -128,6 +128,9 @@
 
       font-family: "Lato-Black";
       font-size: rem-calc(23);
+      @media screen and (max-width: 320px) {
+        font-size: rem-calc(19);
+      }
     }
     img {
       display: inline-block;
